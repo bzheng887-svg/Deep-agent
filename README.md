@@ -1,4 +1,3 @@
-# Deep-agent
 # DeepClaw
 
 AI Agent 应用，前端 Vue 3，后端 Python FastAPI + LangChain。
