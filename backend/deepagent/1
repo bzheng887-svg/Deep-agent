@@ -1,0 +1,8 @@
+ModelResponse(result=[AIMessage(content='<think>用户只是打了个招呼说"你好"，这是一个简单的问候。我应该简洁地回应，用中文（简体中文）回复。\n</think>\n\n你好！有什么我可以帮你的吗？', additional_kwargs={'refusal': None},
+response_metadata=
+    {'token_usage': {
+        'completion_tokens': 34,
+        'prompt_tokens': 9755,
+        'total_tokens': 9789,
+        'completion_tokens_details': None, 'prompt_tokens_details': None, 'total_characters': 0}, 'model_provider': 'openai', 'model_name': 'MiniMax-M2.7', 'system_fingerprint': None, 'id': '067b01a39d393ed463368370fad0e4fe', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019ebb1f-2df6-7342-afb9-44fe36080c30-0', tool_calls=[], invalid_tool_calls=[],
+usage_metadata={'input_tokens': 9755, 'output_tokens': 34, 'total_tokens': 9789, 'input_token_details': {}, 'output_token_details': {}})], structured_response=None)
