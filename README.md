@@ -1,6 +1,11 @@
 # DeepClaw
 
 AI Agent 应用，前端 Vue 3，后端 Python FastAPI + LangChain。
+<img width="1871" height="898" alt="image" src="https://github.com/user-attachments/assets/9d7f58ac-8956-4115-9872-835c119f8b0a" />
+
+<img width="1879" height="889" alt="image" src="https://github.com/user-attachments/assets/a8100e30-fe77-4e4d-9730-a168aa89c37e" />
+
+<img width="1899" height="895" alt="image" src="https://github.com/user-attachments/assets/17ee71c1-665b-44dd-acbf-6e8369d7ff43" />
 
 ## 项目结构
 
@@ -24,27 +29,25 @@ deepclaw/
 │   ├── builtin-skills/       # 内置 Skill 定义
 │   │   ├── skill-creator/    # Skill 创建工作流 + 评估系统
 │   │   └── tool-creator/     # Tool 创建工作流
+|   |── tools/                    # 外部工具（动态加载）
+|   |   ├── builtintools.py
+│   |   └── tool_runner.py        # 工具调用器
 │   ├── router/               # API 路由
 │   │   ├── models.py         # 模型 CRUD + verify_model_connection()
 │   │   └── session.py        # 会话创建
 │   ├── session/              # 会话模块
 │   │   ├── session_id_create.py
 │   │   └── session_start.py
-│   ├── mongodb/              # 数据库层（Motor 异步 MongoDB）
-│   │   └── db.py
 │   └── user/
 │       └── dependencies.py
 ├── frontend/deepclaw/         # Vue 3 + Vite + TypeScript
-│   └── src/
-│       ├── App.vue           # 根组件
-│       ├── main.ts
-│       ├── api.ts            # API 调用封装
-│       ├── config.ts
-│       └── components/
-├── tools/                    # 外部工具（动态加载）
-│   └── tool_runner.py        # 工具调用器
-├── skills/                   # 用户自定义 Skills
-└── workspace/               # Agent 工作目录
+    └── src/
+        ├── App.vue           # 根组件
+        ├── main.ts
+        ├── api.ts            # API 调用封装
+        ├── config.ts
+        └── components/
+
 ```
 
 ## 核心架构
